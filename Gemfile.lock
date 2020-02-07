@@ -8,10 +8,10 @@ GIT
 
 GIT
   remote: https://github.com/chef/ohai.git
-  revision: 17cdaa58cb90d29134c7af2604c38b5b45f22ef3
+  revision: 5a1bce1ca8bf3310f14632c28ed0f0e9b04ec2f9
   branch: master
   specs:
-    ohai (16.3.0)
+    ohai (16.3.1)
       chef-config (>= 12.8, < 17)
       chef-utils (>= 16.0, < 17)
       ffi (~> 1.9)
@@ -63,6 +63,8 @@ PATH
       tty-prompt (~> 0.21)
       tty-screen (~> 0.6)
       uuidtools (~> 2.1.5)
+      winrm (~> 2.1)
+      winrm-elevated (~> 1.0)
     chef (16.3.35-universal-mingw32)
       addressable
       bcrypt_pbkdf (= 1.1.0.rc1)
@@ -109,6 +111,8 @@ PATH
       win32-process (~> 0.8.2)
       win32-service (>= 2.1.5, < 3.0)
       win32-taskscheduler (~> 2.0)
+      winrm (~> 2.1)
+      winrm-elevated (~> 1.0)
       wmi-lite (~> 1.0)
 
 PATH
@@ -429,6 +433,10 @@ GEM
       logging (>= 1.6.1, < 3.0)
       nori (~> 2.0)
       rubyntlm (~> 0.6.0, >= 0.6.1)
+    winrm-elevated (1.2.1)
+      erubi (~> 1.8)
+      winrm (~> 2.0)
+      winrm-fs (~> 1.0)
     winrm-fs (1.3.3)
       erubi (~> 1.8)
       logging (>= 1.6.1, < 3.0)
